@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://source.unsplash.com/1600x900/?landscape");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0px 0px 30px 10px;
+    backdrop-filter: blur(2.8px);
+    -webkit-backdrop-filter: blur(2.8px);
+}
+
+h1 {
+    font-size: 50px;
+    text-shadow: 0px 0px 8px #ffffff;
+}
+
+.images {
+    margin: 30px 0;
+    display: flex;
+    gap: 20px;
+}
+
+img {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px 5px #7007d3;
+    max-width: 115px;
+}
+
+img:hover {
+    opacity: .8;
+    animation: flip-vertical-right 0.4s ease-in-out 2 alternate forwards;
+}
+
+@keyframes flip-vertical-right {
+    0% {
+        transform: rotateY(0);
+    }
+
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+
+img:active {
+    opacity: .5;
+}
+
+#rock {
+    background-color: #2fb842
+}
+
+#paper {
+    background-color: #ce0e0e
+}
+
+#scissors {
+    background-color: #1d616d;
+}
+
+p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.player-score span {
+    color: #2b2ee2;
+    font-size: 30px;
+}
+
+.machine-score span {
+    color: #d60d0d;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background: url("https://source.unsplash.com/480x915/?portrait");
+        background-size: cover;
+    }
+
+    .container {
+        width: 380px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    img {
+        max-width: 90px;
+    }
+
+    .player-score {
+        font-size: 20px;
+    }
+
+    .player-score span {
+        font-size: 27px;
+    }
+
+    .machine-score {
+        font-size: 20px;
+    }
+
+    .machine-score span {
+        font-size: 27px;
+    }
+}
