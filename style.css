@@ -50,7 +50,7 @@ img {
 
 img:hover {
     opacity: .8;
-    animation: flip-vertical-right 0.4s ease-in-out 2 alternate forwards;
+    animation: flip-vertical-right 0.3s ease-in-out 2 alternate forwards;
 }
 
 @keyframes flip-vertical-right {
