@@ -10,4 +10,15 @@
 </div>
 <br>
 
+<h2 align=center>Desktop</h2>
+
+<div align=center>
 <a href="https://cyberxdolly.github.io/desafio-4-javascript-jokenpo/"><img src="https://github.com/CYBERxDOLLY/desafio-4-javascript-jokenpo/blob/main/assets/img/jokenpo.PNG?raw=true"></a>
+</div>
+<br>
+
+<h2 align=center>Mobile</h2>
+
+<div align=center>
+<a href="https://cyberxdolly.github.io/desafio-4-javascript-jokenpo"><img src="https://github.com/CYBERxDOLLY/desafio-4-javascript-jokenpo/blob/main/assets/img/jokenpo-mobile.PNG?raw=true"></a>
+</div>
