@@ -28,16 +28,16 @@ const playTheGame = (human, machine) => {
 
     if (human === machine) {
         result.innerHTML = "😐 Empate! 😐"
-        result.style.color = "green"
-        result.style.transition = "0.7s ease-in-out"
-        result.style.fontSize = "27px"
+        result.style.color = "green" //muda a cor da fonte
+        result.style.transition = "0.7s ease-in-out" //adiciona um efeito de transição na mudança de cor
+        result.style.fontSize = "27px" //muda o tamanho da fonte
     } else if (
         (human === GAME_OPTIONS.PAPER && machine === GAME_OPTIONS.ROCK) ||
         (human === GAME_OPTIONS.ROCK && machine === GAME_OPTIONS.SCISSORS) ||
         (human === GAME_OPTIONS.SCISSORS && machine === GAME_OPTIONS.PAPER)
-        ) {
-            humanScoreNumber++
-            humanScore.innerHTML = humanScoreNumber
+    ) {
+        humanScoreNumber++
+        humanScore.innerHTML = humanScoreNumber
         result.innerHTML = "🔥 Você ganhou! 🔥"
         result.style.color = "blue"
         result.style.transition = "0.7s ease-in-out"
@@ -52,6 +52,11 @@ const playTheGame = (human, machine) => {
     }
 };
 
+/*  
+    tentei colocar uma música para ficar tocando de fundo, que começasse assim que
+    o site fosse aberto e também sem mostrar os controles do player, mas por algum
+    motivo não consegui fazer funcionar T-T
+*/
 const backgroundMusic = document.querySelector(".background-music");
 backgroundMusic.volume = 0.1;
 backgroundMusic.autoplay = true;
