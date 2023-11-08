@@ -10,4 +10,4 @@
 </div>
 <br>
 
-<a href=""><img src="https://github.com/CYBERxDOLLY/desafio-4-javascript-jokenpo/blob/main/assets/img/jokenpo.PNG?raw=true"></a>
+<a href="https://cyberxdolly.github.io/desafio-4-javascript-jokenpo/"><img src="https://github.com/CYBERxDOLLY/desafio-4-javascript-jokenpo/blob/main/assets/img/jokenpo.PNG?raw=true"></a>
