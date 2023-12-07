@@ -101,7 +101,7 @@ p {
 
 @media screen and (max-width: 480px) {
     body {
-        background: url("https://source.unsplash.com/480x915/?portrait");
+        background: url("https://source.unsplash.com/480x915/?landscape");
         background-size: cover;
     }
 
